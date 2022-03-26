@@ -29,56 +29,62 @@ a{
 }
 
 a:hover, .active{
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 a:active, a:focus,input:active, input:focus{outline:0;}
 
+p {
+	margin: 1ex 0px;
+}
 
 /* ヘッダー
 ------------------------------------------------------------*/
 #header{
 	position: relative;
-    overflow:hidden;
-    width:100%;
-    height:568px;
+		overflow:hidden;
+		width:100%;
+		height:568px;
 }
 
 #header img{
-    position:absolute;
-    left:50%;
-    width:1280px;
-    height:568px;
-    margin-left:-640px;
+		position:absolute;
+		left:50%;
+		width:1280px;
+		height:568px;
+		margin-left:-640px;
 }
 
 #slogan{
 	position: absolute;
-  top: 50%;
+	top: 50%;
 	width: 100%;
 	-webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-	color: #fff;
+	transform: translate(0, -50%);
 	line-height: 1.2;
 	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 3ex 0px;
 }
 
 #slogan h1{
 	font-size: 40px;
-	font-family: 'Pacifico', cursive;
+	/* font-family: 'Pacifico', cursive; */
 	margin-bottom: 20px;
 	font-weight:normal;
+	color: #333;
 }
 
 #slogan h2{
 	font-size: 20px;
 	font-weight:normal;
+	color: #666;
 }
 
 
 /* フッター
 ------------------------------------------------------------*/
-#footer{
+footer{
 	clear: both;
 	padding: 50px 10px 50px 0;
 	text-align: center;
@@ -114,7 +120,7 @@ section h2{
 .col2 li{
 	display: inline-block;
 	width: 100%;
-  	margin: 20px 0 20px 0;
+		margin: 20px 0 20px 0;
 }
 
 
@@ -239,7 +245,7 @@ section h2{
 		font-size:14px;
 	}
 	
-  a#menu{
+	a#menu{
 		display:none;
 	}	
 
@@ -266,7 +272,7 @@ section h2{
 		font-weight: 300;
 	}
 	
-  #mainnav a{
+	#mainnav a{
 		color: #000;
 	}
 	
@@ -319,7 +325,7 @@ section h2{
 		padding-top: 120px;
 	}
 	
-  #footer{
+	#footer{
 		padding: 30px 10px 70px 0;
 	}
 }
@@ -334,7 +340,7 @@ section h2{
 
 @media only screen and (max-width: 640px){
 	#map iframe{
-	  width: 96% !important;
+		width: 96% !important;
 		left: 2%;
 	}
 }
@@ -348,62 +354,62 @@ section h2{
 		font-size: 16px;
 	}
 
-  a#menu{
-  	display: inline-block;
-  	position: relative;
-  	width: 40px;
-  	height: 40px;
-  	margin: 10px;
+	a#menu{
+		display: inline-block;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
 	}
 
 	#menuBtn{
-  	display: block;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	width: 18px;
-  	height: 2px;
-  	margin: -1px 0 0 -7px;
-  	background: #fff;
-  	transition: .2s;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 18px;
+		height: 2px;
+		margin: -1px 0 0 -7px;
+		background: #fff;
+		transition: .2s;
 	}
 
 	#menuBtn:before, #menuBtn:after{
-  	display: block;
-  	content: "";
-  	position: absolute;
-  	top: 50%;
-  	left: 0;
-  	width: 18px;
-  	height: 2px;
-  	background: #fff;
-  	transition: .3s;
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 18px;
+		height: 2px;
+		background: #fff;
+		transition: .3s;
 	}
 
 	#menuBtn:before{
-  	margin-top: -7px;
+		margin-top: -7px;
 	}
 
 	#menuBtn:after{
-  	margin-top: 5px;
+		margin-top: 5px;
 	}
 
 	a#menu .close{
-  	background: transparent;
+		background: transparent;
 	}
 
 	a#menu .close:before, a#menu .close:after{
-  	margin-top: 0;
+		margin-top: 0;
 	}
 
 	a#menu .close:before{
-  	transform: rotate(-45deg);
-  	-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
 	}
 
 	a#menu .close:after{
-  	transform: rotate(-135deg);
-  	-webkit-transform: rotate(-135deg);
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
 	}
 
 	.panel{
